@@ -1,8 +1,17 @@
 
 public class BinarySearch {
 
-	public BinarySearch() {
-		// TODO Auto-generated constructor stub
+	
+	
+	
+	class Solution {
+	    public int search(int[] nums, int target) {
+	    		
+	    	
+	    	
+	    }
 	}
-
+	
+	
+	
 }
