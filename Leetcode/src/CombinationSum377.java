@@ -27,7 +27,7 @@ public class CombinationSum377 {
 	                
 	                /*So, to be more acutely, because it has for loop, we are trying to find combinations of each numbers, if we are looking for target number
 	                 * 14, dp[14], combination of 14 is by for loop, and in the nums, is equals to dp[14 - each numbers in nums]. The reason that dp[0] =1 is because
-	                 * there is only one combination that makes 0 is 0 itself.*/
+	                 * there is only one combination that makes 0 is 0 itself. */
 	        }
 	        
 	        
