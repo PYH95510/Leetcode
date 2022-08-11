@@ -24,6 +24,10 @@ public class CombinationSum377 {
 	                //Forexample if we want to find target 7, dp[i] is 7 and num[i] is 4 then we need to find 3 so we should
 	                //Find 7-4 so it should be 4-3 and then find the rest.
 	                
+	                
+	                /*So, to be more acutely, because it has for loop, we are trying to find combinations of each numbers, if we are looking for target number
+	                 * 14, dp[14], combination of 14 is by for loop, and in the nums, is equals to dp[14 - each numbers in nums]. The reason that dp[0] =1 is because
+	                 * there is only one combination that makes 0 is 0 itself.*/
 	        }
 	        
 	        
