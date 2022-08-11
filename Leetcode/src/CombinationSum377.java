@@ -11,7 +11,7 @@ public class CombinationSum377 {
 		    
 	        int dp[] = new int[target+1];//instantiate dp with target amount +1. BC nums is always greater or eqaul than 1.
 	        dp[0]= 1;
-	        for(int i=1;i<dp.length;i++){
+	        for(int i=1;i<dp.length;i++){ //
 	           for (int j=0 ; j<nums.length ; j ++){
 	                if (nums[j] <= i) dp[i] += dp[i-nums[j]];
 	        }
