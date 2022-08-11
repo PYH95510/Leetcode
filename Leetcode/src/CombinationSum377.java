@@ -10,8 +10,9 @@ public class CombinationSum377 {
 	 public int combinationSum4(int[] nums, int target) {
 		    
 	        int dp[] = new int[target+1];//instantiate dp with target amount +1. BC nums is always greater or eqaul than 1.
-	        dp[0]= 1;
-	        for(int i=1;i<dp.length;i++){ //
+	        dp[0]= 1; //Think it as a basic case
+	        //Better to think it as math problem when we solve dynamic programming
+	        for(int i=1;i<dp.length;i++){ 
 	           for (int j=0 ; j<nums.length ; j ++){
 	                if (nums[j] <= i) dp[i] += dp[i-nums[j]];
 	        }
