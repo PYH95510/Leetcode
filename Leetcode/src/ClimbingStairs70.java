@@ -1,18 +1,19 @@
 
-public class ClimbingStairs {
+public class ClimbingStairs70 {
 
 	class Solution {
 	    public int climbStairs(int n) {
 	    
 	        if(n == 1) return 1;
 	    
-	        int stepOne = 1, stepTwo = 1; //instantiate step one and step two as 2 respectively because if there are two stairs, there should be more than one possible way
+	        int stepOne = 1, stepTwo = 2; //instantiate step one and step two as 2 respectively because if there are two stairs, there should be more than one possible way
 	        
 	        int result = 0;
-	        for( int i = 2 ; i <= n ; i ++) {
-	            result = stepOne+stepTwo;
-	            stepTwo=stepOne; // save the step One's value to step 
-	            stepOne=result; // save the result's value to stepOne not to start over again
+	        for( int i = 3 ; i <= n ; i ++) {
+	            result = stepOne+stepTwo; //dp[i-1] is result and dp[-2] is step two
+	            stepOne=stepTwo;// save the step Two's value to step One
+	            stepTwo=result; // save the result's value to stepOne not to start over again 
+	            
 	        } 
 	      return result; 
 	        
