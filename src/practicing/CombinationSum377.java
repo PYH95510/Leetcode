@@ -1,4 +1,4 @@
-package LeetCodePrac;
+package practicing;
 import java.util.Arrays;
 
 public class CombinationSum377 {

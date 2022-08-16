@@ -1,4 +1,4 @@
-package LeetCodePrac;
+package practicing;
 
 public class LemonadeChange860 {
 
