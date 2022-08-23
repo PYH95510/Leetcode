@@ -1,3 +1,7 @@
+<<<<<<< HEAD:Leetcode/src/ClimbingStairs70.java
+=======
+package practicing;
+>>>>>>> 1d393533dc3f67ef1b1ebcea338bdbf537b8b3b3:src/practicing/ClimbingStairs70.java
 
 public class ClimbingStairs70 {
 
