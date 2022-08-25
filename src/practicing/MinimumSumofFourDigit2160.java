@@ -1,3 +1,6 @@
+package practicing;
+
+import java.util.Arrays;
 
 public class MinimumSumofFourDigit2160 {
 
