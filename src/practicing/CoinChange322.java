@@ -28,5 +28,6 @@ public class CoinChange322 {
  * to this problem and try to understand top to bottom. It is okay that to understand and solve whole day. It is that much important. Use every
  * method and means to digest. To understand this problem, there are a lot of keys we should know. First, you should fill the array with large
  * number. Here I just arbitrarily fill with dp.length but it could be Integer.MAX_VALUE or whatever you think it is big enough. After that we should
- * initialize array. Then we are going to iterate two for loops */
+ * initialize array. Then we are going to iterate two for loops. Here the main idea is that we should find the minimum number because minimum number
+ * of coin should be exchanged.*/
  
