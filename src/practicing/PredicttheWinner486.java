@@ -21,12 +21,11 @@ public class PredicttheWinner486 {
 	    public static boolean PredictTheWinner(int[] nums) {
 	        return getMaxScore(nums,0,nums.length-1) >= 0;
 	    }
-	    // minMax的思想就是，每一个玩家都应该保证每一轮他与另外一个玩家的差值都应该是损失最小或者获利最大的
+	  
 	    private static int getMaxScore(int[] nums, int s, int e){
 	        if (s == e)
 	            return nums[s];
-	        
-	        // 如果选取第一个，那么对于下一个玩家，他希望的就是自己能在剩下的范围内得到MaxScore
+	 
 	    
 	        int first = nums[s] - getMaxScore(nums,s+1,e);
 	        int last = nums[e] - getMaxScore(nums,s,e-1);
@@ -47,10 +46,9 @@ public class PredicttheWinner486 {
 		
 	}
 
-	
-
-
 
 	
 
 }
+
+/*Both recursion version and using dp version is added, trying to use 2d dp version but still studying*/
