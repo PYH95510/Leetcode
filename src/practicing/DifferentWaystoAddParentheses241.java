@@ -5,8 +5,8 @@ import java.util.List;
 
 public class DifferentWaystoAddParentheses241 {
 
-	public class Solution {
-	    public List<Integer> diffWaysToCompute(String input) {
+	
+	    public static List<Integer> diffWaysToCompute(String input) {
 	        List<Integer> res = new ArrayList<Integer>();
 	        for (int i = 0; i < input.length(); i++) {
 	            char c = input.charAt(i);
@@ -31,6 +31,17 @@ public class DifferentWaystoAddParentheses241 {
 	        if (res.size() == 0) res.add(Integer.valueOf(input));
 	        return res;
 	    }
-	}
+	
+	    
+	    public static void main(String[] args) {
+	    	
+	    	String in ="2*3-4*5";
+	    	
+	    	diffWaysToCompute(in);
+	    	
+	    }
 
 }
+/*I've got this idea from discussion session from Leetcode. https://leetcode.com/problems/different-ways-to-add-parentheses/discuss/66342/Share-a-clean-and-short-JAVA-solution
+ * I am not quite used to using strings and recursion yet. I could understand while I was solving this problem I could know. It is slowly adding numbers
+ * that are calculated while recursive calls are made. save parts to List al and parts that will be saved to List bl so they will be calculated.*/
