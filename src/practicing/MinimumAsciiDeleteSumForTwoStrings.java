@@ -35,3 +35,7 @@ public class MinimumAsciiDeleteSumForTwoStrings {
 	}
 
 }
+/*We have to understand that by drawing the cell, each cell, to make them equal, we should calculate how much ascii code we should add. and that
+ * is what we need to calculate. This takes time for me to understand. I really wanted to write this by myself but I do not think I am there yet.
+ * */
+ 
