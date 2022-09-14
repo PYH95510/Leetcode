@@ -45,3 +45,8 @@ public class IntegerBreak343 {
 //	} MATH SOLUTION
 
 }
+/*I was so close to solve dp solution. However, I have never used Math.max inside Math.max so it takes so much time for me to come up with solution
+ * This is pretty much similar to other dp problems. We just need to consider how to come up with and fill dp[i]. Other than that is pretty much same
+ * For math solution, it is very optimized and it is sometimes hard to come up with. However, if we could come up with this idea, we could amaze the
+ * interviewer. For more information, https://leetcode.com/problems/integer-break/discuss/80785/O(log(n))-Time-solution-with-explanation is where I get
+ * the math solution. */
