@@ -14,9 +14,10 @@ public class IntegerBreak343 {
 	        
 	        
 	        
-	        for(int i = 2 ; i < dp.length ; i++){ //because n is greater or eqaul than 2
+	        for(int i = 2 ; i < dp.length ; i++){ //because n is greater or equal than 2
 	            for(int j = 1 ; j < i ; j++){
-	                dp[i] = Math.max(dp[i], (Math.max(j,dp[j]) * Math.max(i-j,dp[i-j])));
+	                dp[i] = Math.max(dp[i], (Math.max(j,dp[j]) * Math.max(i-j,dp[i-j]))); //this is what I have never thought of using two Math.max inside math.max I should consider next time.
+	                
 	            }
 	        }
 	        
