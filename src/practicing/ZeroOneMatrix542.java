@@ -36,15 +36,15 @@ public class ZeroOneMatrix542 {
 	        
 	        for (int i = row - 1; i >= 0; i--) {
 	            for (int j = col - 1; j >= 0; j--) {
-	                if (mat[i][j] == 0) {
-	                    continue;
-	                }
-	                if (i < row - 1) {
-	                    result[i][j] = Math.min(result[i][j], result[i + 1][j] + 1);
-	                }
-	                if (j < col - 1) {
-	                    result[i][j] = Math.min(result[i][j], result[i][j + 1] + 1);
-	                }
+	                if (mat[i][j] == 0)continue;
+	                    
+	                
+	                if (i < row - 1)result[i][j] = Math.min(result[i][j], result[i + 1][j] + 1); 
+	                    
+	                
+	                if (j < col - 1)result[i][j] = Math.min(result[i][j], result[i][j + 1] + 1);
+	                    
+	                
 	            }
 	        }
 	        
