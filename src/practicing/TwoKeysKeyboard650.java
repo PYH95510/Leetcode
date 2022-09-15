@@ -32,3 +32,4 @@ public class TwoKeysKeyboard650 {
  * expressed as p*q. Each p and q could be expressed as one copy *p-1 and one copy*p-1. If we are calculating it into math, we need p+q moves to make
  * pq. For example, to calculate 8, the answer is 6, here we could know 4+2 step is what we need. It is so clear that pq -p-q-1>=1 is prime factorization
  * that we can get from this problem. */
+
