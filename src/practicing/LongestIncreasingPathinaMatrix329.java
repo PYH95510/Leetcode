@@ -58,7 +58,7 @@ public class LongestIncreasingPathinaMatrix329 {
 	        for(int[]d : directions){
 	            int x = i+d[0] , y = j + d[1];
 	            if (0 <= x && x < m && 0 <= y && y < n && matrix[x][y] > matrix[i][j])
-	                cache[i][j] = Math.max(ans,dfs(matrix,x,y,cache)); //if it is computed, assign the values to cache[i][j]
+	                cache[i][j] = Math.max(cache[i][j],dfs(matrix,x,y,cache)); //if it is computed, assign the values to cache[i][j]
 	        }
 	        
 	            return ++cache[i][j];
