@@ -12,8 +12,18 @@ public class MergeIntervals56 {
 			 
 			 for(int[] interval : intervals) { 
 				 
+				 if(merge.isEmpty() || merge.getLast()[1]<interval[0]) { //check if current latest is faster than newly added interval start time
+					 
+					 merge.add(interval);
+				 }else {
+					 merge.getLast()[1] = Math.max(merge.getLast()[1], interval[1]); //replace the end time with the latest time if start time is overlapped
+					 
+				 }
+				 
 			 }
 			 
+			 
+			 return merge.toArray(new int[merge.size()][]); //
 		 }
 		 
 		 
