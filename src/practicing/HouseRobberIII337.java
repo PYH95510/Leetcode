@@ -43,4 +43,8 @@ public class HouseRobberIII337 {
 
 }
 
-//[3,2,3,2,3,null,1]
+/*This problem could be solved using recursion. First recurse left node until it reaches the base case. If it reaches the base case, we assumes we rob
+ * the node. If we rob that node, we go back to previous node and check the right node. If there is, we check the right base node as well. Because we
+ * assign rob node's value to [0]'s array and from next recursive sequence, we add array's [1]'s value and node's current value, we could add current
+ * cell's value and then not robbed value. Also, we could compare not robbed value relatively freely because if we did not rob current node, we could
+ * add either previous node or current node whichever is bigger.*/
