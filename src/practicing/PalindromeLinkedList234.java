@@ -122,3 +122,8 @@ public class PalindromeLinkedList234 {
 		}
 	  
 }
+/*It is really really hard to come up with the O(1) space complexity solution when we first see this problem. It is not that difficult
+ * to just solve this problem but to come up with O(1) from scratch is not easy at all. To have a better understanding, we are basically using
+ * two more method that could be separately problems from LeetCode. One is reaching half of the node and the other one is reversing the node.
+ * Getting half of the node and reverse the node, we could compare them one by one if it is a palindrome. At the end, we restore the list and
+ * return he value. If we find any value that is not same during the process, we assign false value and then return it.*/
