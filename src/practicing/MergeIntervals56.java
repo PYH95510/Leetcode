@@ -9,7 +9,6 @@ public class MergeIntervals56 {
 		 public int[][] merge(int[][] intervals) {
 			 Arrays.sort(intervals,(a,b) -> Integer.compare(a[0],b[0]));
 			 LinkedList<int[]> merge = new LinkedList<>();
-			 
 			 for(int[] interval : intervals) { 
 				 
 				 if(merge.isEmpty() || merge.getLast()[1]<interval[0]) { //check if current latest is faster than newly added interval start time
