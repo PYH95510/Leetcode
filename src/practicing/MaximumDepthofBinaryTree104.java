@@ -33,3 +33,6 @@ public class MaximumDepthofBinaryTree104 {
 	}
 
 }
+/*Finding max depth using recursion. My basic concept so far regarding recursion was wrong. Not technically wrong but I was worried about if
+ * I initialize new variable at the beginning of recursive processes, it will re initialize the whole variable. However, it was so wrong and
+ * I knew that it wouldn't work that way but I hesitate to do so.*/
