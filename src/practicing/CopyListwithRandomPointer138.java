@@ -97,3 +97,6 @@ public class CopyListwithRandomPointer138 {
 //	}
 	
 }
+/*The most important key for both two solution is that we should use Hashmap<Node,Node> and we should use old Node for key. Otherwise, if we use
+ * ContainsKey, we cannot have value because object only saves the address and the address differs accordingly to the object as it is.*/
+ */
