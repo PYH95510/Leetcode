@@ -40,10 +40,10 @@ public class NumberofIsland200 {
 	        if(x>= 0 && x< row && y >= 0 && y < column){
 	            if (!marked[x][y] && grid[x][y] == '1'){
 	        marked[i][j] = true;
-	        dfs(x-1,y,grid,marked);
-	        dfs(x+1,y,grid,marked);
-	        dfs(x,y-1,grid,marked);
-	        dfs(x,y+1,grid,marked);
+	        dfs(x-1,y,grid,marked); //move left until it does not meet 1
+	        dfs(x+1,y,grid,marked);	//move right until it does not meet 1
+	        dfs(x,y-1,grid,marked);	//move up until it does not meet 1
+	        dfs(x,y+1,grid,marked); // move below until it does not meet 1
 	            }
 	        }
 	        
