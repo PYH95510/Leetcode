@@ -65,3 +65,5 @@ public class SlidingWindowMaximum239 {
 		    
 		}
 }
+/*From the second solution, we have used maxdeque method. We always keep trying to maintain max element at the top of the queue and add the current element
+ * at the end of the queue. */
