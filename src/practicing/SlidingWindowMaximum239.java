@@ -1,5 +1,8 @@
 package practicing;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 public class SlidingWindowMaximum239 {
 
 //	class Solution {
@@ -23,4 +26,41 @@ public class SlidingWindowMaximum239 {
 //	    
 //	}
 
+	//this is one of the basic way to learn how to use sliding window.
+	class Solution {
+		   public int[] maxSlidingWindow(int[] nums, int k) {
+			    if (nums.length == 0) return new int[0];
+		       
+			    Deque<Integer> index = new ArrayDeque<>();
+			    int[] result = new int[nums.length - k + 1];
+		       
+			    for (int i = 0; i < nums.length; i++) {
+				    int n = nums[i];
+				
+				    while (!index.isEmpty() && nums[index.peekLast()] < n) {
+					    index.removeLast(); // if the last element of queue is less than the current element, remove the last indexed element.
+				    }
+		            
+				//discard right-most index of previous window that is outside of the window range
+				if (!index.isEmpty() && index.peekFirst() == i - k) {
+					index.pop();
+				}
+
+				//add current index to queue
+				index.add(i);
+
+				//skip over the first window until it fills k elements
+				if (i < k - 1) {
+					continue;
+				}
+
+				//head of d contains the max value over the window
+				result[i - k + 1] = nums[index.peekFirst()];
+			}
+		       
+			return result;
+		       
+		    }
+		    
+		}
 }
