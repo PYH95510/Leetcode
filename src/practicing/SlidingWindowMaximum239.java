@@ -43,6 +43,7 @@ public class SlidingWindowMaximum239 {
 		            
 				//discard right-most index of previous window that is outside of the window range
 				if (!index.isEmpty() && index.peekFirst() == i - k) {
+		            //for example fith index's value is the maximum value, and it was included in the maximum and it is not eliminated until this if condition. Then this i-k will show you whether it is outside of the range
 					index.pop();
 				}
 
