@@ -98,4 +98,6 @@ public class SlidingWindowMaximum239 {
 	}
 }
 /*From the second solution, we have used maxdeque method. We always keep trying to maintain max element at the top of the queue and add the current element
- * at the end of the queue. */
+ * at the end of the queue. 	Solution 1 takes O(nk) time and O(1) space
+Solution 2 takes O(n) time and O(k) space
+Solution 3 takes O(n) time and O(n) space.*/
