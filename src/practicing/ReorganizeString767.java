@@ -65,3 +65,8 @@ public class ReorganizeString767 {
 	}
 
 }
+/*This solution is very intuitive to understand. With the first intuitive idea, it is easy to come up with the solution. It is always important for
+ * Java to come up with the right data structure. This time, we used heap (Priority Queue) and Hashmap to solve. First, we get the numbers of frequencies
+ * of characters from the strings. Then add it the the priority queue accordingly to the frequencies. And then, we add it to the string builder one by one.
+ * For the priority queue, we should set queue dependency as frequency of occurrence which means, if it occurs more, it comes first using lambda. By so,
+ * we add it to the string builder until it gets 0. Time complexity for this is O(nlogn) because we are using priority queue.*/
