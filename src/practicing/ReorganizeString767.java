@@ -7,6 +7,7 @@ import java.util.PriorityQueue;
 public class ReorganizeString767 {
 
 	class Solution {
+		
 	    public String reorganizeString(String s) {
 	        //max value's alphabet 
 	        Map <Character,Integer> result = new HashMap <Character,Integer> ();
