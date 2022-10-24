@@ -78,3 +78,8 @@ public class AllNodesDistanceKinBinaryTree863 {
 	
 
 }
+/*This is tree problem but the one that I have never met. People categorized this problem as map its parent or draw a graph. To solve this problem. We
+ * should know that draw or graph or map its parent. Either one is same concept. It is because if we do not do so, we, at the end would only get the 
+ * child node from p starting from the target node. Therefore, we should map the whole graph or either parent. After that, we should do the recursion.
+ * The time complexity for the problem is O(n) because we use recursion and the space complexity is O(n) as well.*/
+ 
