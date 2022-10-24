@@ -2,8 +2,10 @@ package practicing;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public class AllNodesDistanceKinBinaryTree863 {
 
@@ -16,10 +18,10 @@ public class AllNodesDistanceKinBinaryTree863 {
 		  }
 	class solution{
 		Map <TreeNode, TreeNode> graph = new HashMap<>();
-		
-		
+		List<Integer> answer = new ArrayList<>();
+		Set<TreeNode> visited = new HashSet<TreeNode>();
 		 public List<Integer> distanceK(TreeNode root, TreeNode target, int k){
-			 List<Integer> answer = new ArrayList<>();
+			 
 			 
 			 findParent(root);
 			 
@@ -44,7 +46,27 @@ public class AllNodesDistanceKinBinaryTree863 {
 			
 		}
 		
-		public List<Integer> 
+		
+		public void findistance(TreeNode node, int k) {
+			if(visited.contains(node)|| node == null)return;
+			
+			visited.add(node); //add node to visited
+			
+			if(k == 0) {
+				answer.add(node.val);
+				return;
+			}
+			
+			
+			findistance(node.left,k-1);
+			findistance(node.right,k-1);
+			
+			findistance(graph.get(node),k-1);
+			
+		
+			
+			
+		}
 		
 		
 		
