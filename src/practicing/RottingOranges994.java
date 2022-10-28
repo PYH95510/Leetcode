@@ -41,3 +41,6 @@ public class RottingOranges994 {
 	}
 
 }
+/*First, checking if grid is null or length 0. After that, check if there is gird number 2 which is already rotten orange, put it into rotAdjacent 
+ * method. In the method, we first check if the gird's number is bigger than one but if it is less than the minute because if it is bigger than one
+ * it is rotten but it is not contaminated by that orange. After checking it, we continuously iterate it.*/
