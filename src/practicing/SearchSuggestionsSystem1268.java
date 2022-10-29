@@ -1,5 +1,9 @@
 package practicing;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class SearchSuggestionsSystem1268 {
 
 	class Solution {
