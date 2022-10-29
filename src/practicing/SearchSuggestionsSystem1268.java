@@ -19,7 +19,7 @@ public class SearchSuggestionsSystem1268 {
 	        }
 	        return i;
 	    }
-	    //find the lowest bound
+	    //find the lowest bound, if sting word is bigger than the word product, than we can skip the input word product
 	    
 	     public List<List<String>> suggestedProducts(String[] products, String searchWord) {
 	        Arrays.sort(products);
@@ -32,18 +32,21 @@ public class SearchSuggestionsSystem1268 {
 	             //Get the starting index of word starting with 'prefix'.
 	             start = lower_bound(products, bsStart, prefix);
 	             
-	             result.add(new ArrayList<>());
+	             result.add(new ArrayList<>());//initialize next list
 	             
-	             for(int i = start; i < Math.min(start + 3, n); i++){
+	             for(int i = start; i < Math.min(start + 3, n); i++){//we can add to the result 3 answers anyways
 	                 if(products[i].length() < prefix.length()|| !products[i].substring(0,prefix.length()).equals(prefix))
-	                     break;
+	                     break; // if product's length is shorter than prefix's length or product's substring is not eqaul to prefix then break, do not add it to the result
 	                 result.get(result.size()-1).add(products[i]);
+	                 // add it to the previously added newly created list.
 	             }
 	             
-	             bsStart = Math.abs(start);
+	             bsStart = Math.abs(start);//assign start's absolute value to bsStart
 	         }
 	         return result;
 	    }
 	}
 
 }
+/*The above is pretty brute force or first solution that could come up with your mind when you first see this problem on the interview. However, it 
+ * might be way more longer and not might be optimized like this form. Therefore, we should use different way to solve this problem.*/
