@@ -45,7 +45,7 @@ public class BuildBinaryExpressionTreeFromInfixExpression1597 {
 					
 				}
 			}
-			while(!operands.isEmpty())
+			while(!operands.isEmpty())//to combine last operators and nodes
 				node.push(buildNode(operands.pop(),node.pop(),node.pop()));
 			
 			return node.peek();
