@@ -6,8 +6,7 @@ import java.util.Set;
 
 public class RemoveDuplicatesFromSortedArray26 {
 
-	class Solution {
-	    public int removeDuplicates(int[] nums) {
+	  public int removeDuplicates(int[] nums) {
 	        Set <Integer> duplicate = new HashSet<Integer>();
 	        
 	        for(int i = 0 ; i < nums.length ; i++){
@@ -22,6 +21,5 @@ public class RemoveDuplicatesFromSortedArray26 {
 	        Arrays.sort(nums);
 	        return duplicate.size();
 	    }
-	}
 
 }
