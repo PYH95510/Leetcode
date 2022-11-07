@@ -40,7 +40,7 @@ public class SymmetricTree101 {
 	        // this is sort of important, this means we are going to check every time that these two are wheter true or first from left recursion to right recursion
 	        
 	    }
-	    
+	   
 	    
 	}
 }
