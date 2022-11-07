@@ -34,7 +34,7 @@ public class SymmetricTree101 {
 	        if (left.val != right.val) return false;
 	        
 	        
-	        
+	       
 	        
 	        return isSymmetric(left.left, right.right) && isSymmetric(left.right, right.left);
 	        // this is sort of important, this means we are going to check every time that these two are wheter true or first from left recursion to right recursion
