@@ -44,3 +44,6 @@ public class SymmetricTree101 {
 	    
 	}
 }
+/*This is recursive solution for symmetric tree. It is pretty easy to solve and I did it by myself. The last return part is sort of important to understand
+ * but once you understand the meaning of it, it is fairly easy.*/
+ 
