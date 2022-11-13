@@ -20,7 +20,29 @@ public class BestTimetoBuyandSellStock121 {
 	    }
 	    
 	}
+//	class Solution {
+//	    public int maxProfit(int[] prices) {
+//	        int buy = prices[0];
+//	        int max = 0;
+//	        
+//	        for(int i =1;i<prices.length;i++){
+//	            int tmt = prices[i] - buy;
+//	            
+//	            if(max < tmt) max = tmt;
+//	            
+//	            if(buy > prices[i]){
+//	                buy = prices[i];
+//	            }
+//	            
+//	            if(max < 0) max = 0;
+//	        }
+//	        
+//	        return max;
+//	    }
+//	}
 }
 /*we do not need to consider about first date because it will be assigned same first date's value anyways. 
  * Also, we shouldn't care about days where no profit because of the first date's price, it will be 0 anyways because no value has 
  * been assigned after initialization.*/
+
+/*I added two pointer solution*/
