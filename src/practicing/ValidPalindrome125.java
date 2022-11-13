@@ -46,4 +46,8 @@ public class ValidPalindrome125 {
 //		  }
 //		}
 }
-/*When it comes to palindrme question, two things should always we have to have in minde. Either we will compare */
+
+/*When it comes to palindrme question, two things should always we have to have in minde. Either we will compare two strings using reverse() or builder
+ *compare two indexes from the middle and return early if we find different character. Of course it should be false. I prefer above solution. Both are O(n)
+ *time complexity solution but only above one has O(1) space complexity whereas below one is o(n)*/
+ 
