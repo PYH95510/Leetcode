@@ -4,22 +4,33 @@ public class BestTimetoBuyandSellStock121 {
 
 	class Solution {
 	    public int maxProfit(int[] prices) {
-	        int min = Integer.MAX_VALUE;
-	        int profit = 0;
-	        
-	        for(int i : prices){
-	            if(min>i) min = i;
-	            
-	            if(i-min>0)profit = Math.max(profit,i-min);
-	                
-	            
+	        int min=prices[0];
+	        int max=0;
+	        for(int price:prices){
+	            min=Math.min(min,price);
+	            max=Math.max(max,price-min);
 	        }
-	        
-	        return profit;
-	        
+	        return max;
 	    }
-	    
 	}
+//	class Solution {
+//	    public int maxProfit(int[] prices) {
+//	        int min = Integer.MAX_VALUE;
+//	        int profit = 0;
+//	        
+//	        for(int i : prices){
+//	            if(min>i) min = i;
+//	            
+//	            if(i-min>0)profit = Math.max(profit,i-min);
+//	                
+//	            
+//	        }
+//	        
+//	        return profit;
+//	        
+//	    }
+//	    
+//	}
 //	class Solution {
 //	    public int maxProfit(int[] prices) {
 //	        int buy = prices[0];
