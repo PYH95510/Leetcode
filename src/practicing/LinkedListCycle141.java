@@ -47,5 +47,7 @@ public class LinkedListCycle141 {
 	
 }
 /*using hash algorithm has o(n) time complexity (using while loop) (add and contains for hash time complexity is only o(1). Space complexity for Hash
- * is O(n). However, I prefer the below solution.*/
+ * is O(n). However, I prefer the below solution. It is because we often use fast, slow pointer a lot. I could come up with the below solution by myself
+ * easily. It is because fast pointer is running twice faster than the slow pointer and if there is cycle, then they would eventually meet. The below
+ * solution's time complexity is O(n) and space complexity is O(1)*/
  
