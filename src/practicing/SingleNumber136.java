@@ -2,8 +2,11 @@ package practicing;
 
 public class SingleNumber136 {
 
-	public SingleNumber136() {
-		// TODO Auto-generated constructor stub
+	public int singleNumber(int[] nums) {
+		int result = 0;
+		for(int num : nums) {
+			result ^= num;
+		}
+		return result;
 	}
-
 }
