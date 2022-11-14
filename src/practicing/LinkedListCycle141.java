@@ -30,4 +30,8 @@ public class LinkedListCycle141 {
 		    }
 	}
 
+	
 }
+/*using hash algorithm has o(n) time complexity (using while loop) (add and contains for hash time complexity is only o(1). Space complexity for Hash
+ * is O(n)*/
+ 
