@@ -28,9 +28,6 @@ public class ArithmeticSlices413 {
 		}
 		}
 
-
-
-
 }
 /*It took so much time for me to solve this problem. I thought to solve this problem, I should use special technique or something but
  * at the end, to solve this, I just need intuition to solve this question. As we could know from the algorithm, we just assign the value to each
