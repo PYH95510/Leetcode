@@ -19,7 +19,6 @@ public class IntersectionofTwoLinkedLists160 {
 //	            }
 //	            headA = headA.next;
 //	        }
-//
 //	        return null;
 //	    }
 //	}
