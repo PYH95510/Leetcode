@@ -1,9 +1,13 @@
 package practicing;
 
+import java.util.List;
+
 public class MissingRanges163 {
 
-	public MissingRanges163() {
-		// TODO Auto-generated constructor stub
+	class Solution {
+	    public List<String> findMissingRanges(int[] nums, int lower, int upper) {
+	        
+	    }
 	}
 
 }
