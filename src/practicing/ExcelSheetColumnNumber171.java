@@ -13,7 +13,7 @@ public class ExcelSheetColumnNumber171 {
 
 		        Map < Character, Integer > alpha_map = new HashMap < > ();
 		        for (int i = 0; i < 26; i++) {
-		            int c = i + 65; // Decimal 65 in ASCII corresponds to char 'A'
+		            int c = i + 65; 
 		            alpha_map.put((char) c, i + 1);
 		        }
 
