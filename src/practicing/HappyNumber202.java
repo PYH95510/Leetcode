@@ -1,5 +1,8 @@
 package practicing;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class HappyNumber202 {
 	class Solution {
 
@@ -23,3 +26,6 @@ public class HappyNumber202 {
 	    }
 	}
 }
+
+/*this is pretty easy when we are using hash set and set. When we have seen that number before, we can just add that number to Set and then move
+ * on to the next number that we have not seen.*/
