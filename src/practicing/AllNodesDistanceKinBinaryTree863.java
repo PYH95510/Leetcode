@@ -17,7 +17,7 @@ public class AllNodesDistanceKinBinaryTree863 {
 		      TreeNode(int x) { val = x; }
 		  }
 	class solution{
-		Map <TreeNode, TreeNode> graph = new HashMap<>();
+		Map <TreeNode, TreeNode> draw = new HashMap<>();
 		List<Integer> answer = new ArrayList<>();
 		Set<TreeNode> visited = new HashSet<TreeNode>();
 		 public List<Integer> distanceK(TreeNode root, TreeNode target, int k){
@@ -35,12 +35,12 @@ public class AllNodesDistanceKinBinaryTree863 {
 			
 			
 			if(node.left != null) {
-			graph.put(node.left, node);
+				draw.put(node.left, node);
 			findParent(node.left);
 			}
 			
 			if(node.right !=null) {
-			graph.put(node.right, node);
+				draw.put(node.right, node);
 			findParent(node.right);
 			}
 			
@@ -61,7 +61,7 @@ public class AllNodesDistanceKinBinaryTree863 {
 			findistance(node.left,k-1);
 			findistance(node.right,k-1);
 			
-			findistance(graph.get(node),k-1);
+			findistance(draw.get(node),k-1);
 			
 		
 			
@@ -81,5 +81,6 @@ public class AllNodesDistanceKinBinaryTree863 {
 /*This is tree problem but the one that I have never met. People categorized this problem as map its parent or draw a graph. To solve this problem. We
  * should know that draw or graph or map its parent. Either one is same concept. It is because if we do not do so, we, at the end would only get the 
  * child node from p starting from the target node. Therefore, we should map the whole graph or either parent. After that, we should do the recursion.
- * The time complexity for the problem is O(n) because we use recursion and the space complexity is O(n) as well.*/
+ * The time complexity for the problem is O(n) because we use recursion and the space complexity is O(n) as well.
+ * review again once*/
  
